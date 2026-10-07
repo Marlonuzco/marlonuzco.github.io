@@ -1,6 +1,7 @@
 export type ExperienceJob = {
   company: string;
   highlights: string[];
+  location: string;
   period: string;
   role: string;
   summary: string;

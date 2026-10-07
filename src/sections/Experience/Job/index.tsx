@@ -8,6 +8,7 @@ export const Job = ({ job }: JobProps) => (
       <p className="text-primary text-sm font-medium">{job.period}</p>
     </div>
     <p className="text-muted mt-1 text-sm">{job.role}</p>
+    <p className="text-muted text-sm">{job.location}</p>
     <p className="mt-3 leading-7">{job.summary}</p>
     <ul className="text-muted mt-3 list-disc space-y-2 pl-5 text-sm leading-6">
       {job.highlights.map((highlight) => (

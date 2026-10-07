@@ -1,0 +1,10 @@
+---
+description: Evitar dependencias y abstracciones antes de necesitarlas
+alwaysApply: true
+---
+
+# Alcance
+
+Este sitio es estático. No añadas router, cliente HTTP, librería de componentes ni generador de PDF hasta que una funcionalidad lo requiera.
+
+No crees carpetas, hooks o contextos vacíos para un uso futuro.

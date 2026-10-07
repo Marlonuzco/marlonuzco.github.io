@@ -1,0 +1,18 @@
+---
+description: Estructura de carpetas y responsabilidad de cada capa
+alwaysApply: true
+---
+
+# Estructura del proyecto
+
+- `src/app`: compone proveedores y la página.
+- `src/sections`: secciones de la landing. Cada una tiene `index.tsx` y, cuando define una forma de datos, `types.ts`.
+- `src/components`: piezas reutilizables que reciben datos por props.
+- `src/services/i18n`: carga `public/translations` y cambia el idioma.
+- `src/services/preferences`: lectura y escritura de `localStorage`.
+- `src/context`: estado compartido de presentación, como el tema.
+- `src/hooks`: acceso a idioma y tema.
+- `public/translations`: textos visibles en español e inglés.
+- `src/utils`: valores que no son texto visible, como URLs.
+
+No añadas `pages/`, rutas ni una capa de API hasta que el producto las necesite.

@@ -1,0 +1,14 @@
+---
+description: Prohibir any y mantener TypeScript estricto
+globs: '**/*.{ts,tsx}'
+alwaysApply: false
+---
+
+# TypeScript estricto
+
+No uses `any`.
+
+- Si el dato externo es desconocido, tipa la entrada como `unknown` y acótala antes de usarla.
+- Usa tipos explícitos o genéricos en las funciones reutilizables.
+- Usa `Record<string, unknown>` en lugar de un índice con `any`.
+- No anotes un tipo cuando TypeScript ya lo infiere correctamente.

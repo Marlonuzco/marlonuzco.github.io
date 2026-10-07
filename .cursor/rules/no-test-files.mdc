@@ -1,0 +1,10 @@
+---
+description: No crear archivos de tests automatizados
+alwaysApply: true
+---
+
+# Sin archivos de test
+
+No crees ni dejes en el repositorio archivos `*.test.*`, `*.spec.*` ni carpetas `tests/`, `__tests__/` o `e2e/`.
+
+Valida con lint, tipos, Knip, build y revisión manual del flujo.

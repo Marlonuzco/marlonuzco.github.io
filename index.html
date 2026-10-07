@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portafolio de Marlon José Uzcátegui Contreras, desarrollador Full Stack. React, TypeScript y Node.js."
+    />
+    <meta name="author" content="Marlon José Uzcátegui Contreras" />
+    <meta property="og:title" content="Marlon Uzcátegui — Desarrollador Full Stack" />
+    <meta
+      property="og:description"
+      content="Portafolio de Marlon José Uzcátegui Contreras, desarrollador Full Stack. React, TypeScript y Node.js."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:image" content="%BASE_URL%og-banner.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="%BASE_URL%og-banner.png" />
+    <title>Marlon Uzcátegui — Desarrollador Full Stack</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Marlon José Uzcátegui Contreras",
+        "jobTitle": "Full Stack Developer",
+        "email": "mailto:marlonjoseuzca@gmail.com",
+        "knowsLanguage": ["es", "en"],
+        "sameAs": [
+          "https://github.com/Marlonuzco",
+          "https://www.linkedin.com/in/marlon-jos%C3%A9-uzc%C3%A1tegui-61a0a123b"
+        ]
+      }
+    </script>
+    <script>
+      (function () {
+        try {
+          var theme = localStorage.getItem('portfolio-theme');
+          if (theme !== 'light' && theme !== 'dark') {
+            theme = 'dark';
+          }
+          document.documentElement.dataset.theme = theme;
+
+          var language = localStorage.getItem('portfolio-language');
+          if (language !== 'es' && language !== 'en') {
+            language = navigator.language.toLowerCase().indexOf('es') === 0 ? 'es' : 'en';
+          }
+          document.documentElement.lang = language;
+        } catch (error) {
+          document.documentElement.dataset.theme = 'dark';
+          document.documentElement.lang = 'es';
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

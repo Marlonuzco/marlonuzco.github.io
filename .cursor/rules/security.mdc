@@ -1,0 +1,12 @@
+---
+description: Enlaces externos, secretos y datos personales
+alwaysApply: true
+---
+
+# Seguridad del sitio
+
+- Los enlaces externos usan `rel="noopener noreferrer"` y `target="_blank"`.
+- No escribas secretos, tokens ni archivos `.env` reales en el repositorio.
+- No muestres el teléfono en la interfaz. Permanece solo dentro de los PDF publicados.
+- Los PDF publicados viven en `public/cv`. No subas copias de trabajo ni el HTML de origen.
+- Trata cualquier dato externo futuro como `unknown` hasta validarlo en `services/`.

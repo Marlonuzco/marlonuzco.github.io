@@ -1,0 +1,16 @@
+---
+description: Todo texto visible debe existir en español e inglés
+alwaysApply: true
+---
+
+# Traducciones
+
+Todo texto visible sale de `public/translations/es/general.js` y `public/translations/en/general.js`.
+
+- Los componentes leen el texto con `t()`.
+- Las listas usan `returnObjects: true`.
+- Añade cada clave en los dos idiomas.
+- Incluye títulos, botones, etiquetas, estados vacíos y textos accesibles.
+- Los nombres propios, empresas, tecnologías y enlaces se escriben igual en ambos archivos.
+- Las clases, las rutas, las URLs y las claves técnicas no se traducen.
+- Los códigos de idioma del sitio son `es` y `en`.
